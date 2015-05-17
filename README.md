@@ -3,6 +3,12 @@
 git-flow-format is a plugin for [vim-airline](https://github.com/bling/vim-airline), which formats a Git Flow branch name
 in order to shorten the prefixes and take up less space in your status line.
 
+This is best shown with a couple of examples:
+```
+feature/new_thing --> F/new_thing
+release/v1.0.0 --> R/v1.0.0
+```
+
 ## Installation
 
 git-flow-format can be installed with [Pathogen](https://github.com/tpope/vim-pathogen) in the normal way.

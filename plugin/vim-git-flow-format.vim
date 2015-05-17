@@ -15,6 +15,10 @@ if !exists('g:git_flow_prefixes')
 endif
 
 function! Git_flow_branch_format(name)
+    if !strlen(a:name)
+        return ''
+    endif
+
     let branch = a:name
     let prefix = ''
     let icon = ''

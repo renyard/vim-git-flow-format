@@ -72,6 +72,10 @@ endfunction
 
 " Populate the prefixes from git config.
 function! Git_flow_populate_prefixes()
+    if exists("b:git_flow_config_prefixes") && len(b:git_flow_config_prefixes)
+        return b:git_flow_config_prefixes
+    endif
+
     let prefixes = {}
 
     " Loop over branches and prefixes.
@@ -88,6 +92,8 @@ function! Git_flow_populate_prefixes()
             let prefixes[l:prefix] = g:git_flow_prefixes[branch]
         endif
     endfor
+
+    let b:git_flow_config_prefixes = prefixes
 
     return prefixes
 endfunction

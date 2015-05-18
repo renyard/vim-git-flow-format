@@ -6,11 +6,11 @@ if !exists('g:git_flow_prefixes')
     let g:git_flow_prefixes = {
         \ 'master': '',
         \ 'develop': '',
-        \ 'feature': 'F',
-        \ 'release': 'R',
-        \ 'hotfix': 'H',
-        \ 'support': 'S',
-        \ 'versiontag': 'V'
+        \ 'feature': 'F:',
+        \ 'release': 'R:',
+        \ 'hotfix': 'H:',
+        \ 'support': 'S:',
+        \ 'versiontag': 'V:'
     \ }
 endif
 
@@ -44,7 +44,7 @@ function! Git_flow_branch_format(name)
 
         " Don't add '/' if branch is an empty string.
         if strlen(branch)
-            let output = output . '/' . branch
+            let output = output . branch
         endif
 
         return output

@@ -5,8 +5,8 @@ in order to shorten the prefixes and take up less space in your status line.
 
 This is best shown with a couple of examples:
 ```
-feature/new_thing --> F/new_thing
-release/v1.0.0 --> R/v1.0.0
+feature/new_thing --> F:new_thing
+release/v1.0.0 --> R:v1.0.0
 ```
 
 ## Installation
@@ -31,11 +31,11 @@ you can provide a dictionary of your own prefixes in the style of the default:
 let g:git_flow_prefixes = {
     \ 'master': '',
     \ 'develop': '',
-    \ 'feature': 'F',
-    \ 'release': 'R',
-    \ 'hotfix': 'H',
-    \ 'support': 'S',
-    \ 'versiontag': 'V'
+    \ 'feature': 'F:',
+    \ 'release': 'R:',
+    \ 'hotfix': 'H:',
+    \ 'support': 'S:',
+    \ 'versiontag': 'V:'
 \ }
 ```
 

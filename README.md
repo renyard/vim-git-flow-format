@@ -11,8 +11,19 @@ release/v1.0.0 --> R:v1.0.0
 
 ## Installation
 
-git-flow-format can be installed with [Pathogen](https://github.com/tpope/vim-pathogen) in the normal way.
-Just clone this repo into your bundle directory:
+git-flow-format can be installed with [Vundle](https://github.com/gmarik/Vundle.vim) or
+[Pathogen](https://github.com/tpope/vim-pathogen) in the normal way.
+
+### Vundle
+
+Add the following line to your .vimrc and run :PluginInstall.
+```VimL
+Plugin 'renyard/vim-git-flow-format'
+```
+
+### Pathogen
+
+Git clone the repo into your bundle directory:
 ```Shell
 git clone https://github.com/renyard/vim-git-flow-format.git ~/.vim/bundle/vim-git-flow-format
 ```
